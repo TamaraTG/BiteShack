@@ -180,6 +180,17 @@ figcaption a {
     text-decoration: none;
 }
 
+.booking-title-container {
+    background-color: black;
+    color:#fff;
+    text-align: center;
+    height: 50px;
+}
+
+.booking-title-container .booking-title {
+    padding-top: 10px;
+}
+
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
     header {
@@ -215,7 +226,7 @@ figcaption a {
     }
 
     .menu-header-main {
-        margin: 3em 0 1em 0; /* Adjusted margin for smaller screens */
+        margin: 1em 0 1em 0; /* Adjusted margin for smaller screens */
     }
 
     .food-menu img {
