@@ -36,12 +36,12 @@ p {
     font-size: 2em;
     font-weight: bold;
     letter-spacing: 0.3em;
-    margin-left: 300px; /* Adjusted margin */
+    margin: 350px; /* Adjusted margin */
 }
 
 .site-nav {
     font-family: "Bebas Neue";
-    margin: 10px; /* Adjusted margin */
+    margin: 300px; /* Adjusted margin */
     color: #fff;
     font-size: 1em; /* Adjusted font size */
 }
@@ -75,7 +75,7 @@ p {
     font-weight: bold;
     letter-spacing: 0.3em;
     text-align: center;
-    margin: 1.2em 0 0 0;
+    margin: 1.2em 0 1em 0;
 }
 
 .specials-slideshow {
@@ -104,7 +104,7 @@ p {
 
 .slide img {
     width: 100%; /* Adjusted width */
-    height: 100%; /* Adjusted height */
+    height: 400px; /* Adjusted height */
     border-radius: 20px;
 }
 
@@ -146,7 +146,7 @@ p {
     font-weight: bold;
     letter-spacing: 0.3em;
     text-align: center;
-    margin: 2em 0 1em 0; /* Adjusted margin */
+    margin: 5em 0 1em 0; /* Adjusted margin */
 }
 
 .food-menu {
@@ -211,6 +211,10 @@ figcaption a {
         margin-top: 5px; /* Adjusted margin for smaller screens */
     }
 
+    .specials-mainpage {
+        margin: 2em 0 1em 0;
+    }
+
     .specials-slideshow {
         margin-left: 5px; /* Adjusted margin for smaller screens */
         margin-top: 5px;
@@ -220,13 +224,19 @@ figcaption a {
         height: 200px; /* Adjusted height for smaller screens */
     }
 
+    .slide img {
+        width: 100%; /* Adjusted width */
+        height: 100%; /* Adjusted height */
+        border-radius: 20px;
+    }
+
     #specials-prev,
     #specials-next {
         top: 10em; /* Adjusted top position for smaller screens */
     }
 
     .menu-header-main {
-        margin: 1em 0 1em 0; /* Adjusted margin for smaller screens */
+        margin: 2em 0 1em 0; /* Adjusted margin for smaller screens */
     }
 
     .food-menu img {
