@@ -1,50 +1,50 @@
+/* Default styles for larger screens */
 body {
     font-size: 16px;
     line-height: 1.5;
     background-color: #f4f4f4;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
-  }
+}
 
 header {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    height: 80px; /* Adjusted header height */
     background-color: #991010;
     color: #fff;
 }
 
-  /* Change later */
+a {
+    text-decoration: none;
+    color: black;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-  /* Change later */
 p {
     margin: 0 0 1.5em 0;
 }
 
-    /* Add font family */
 .site-logo {
     font-family: "Bebas Neue";
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     letter-spacing: 0.3em;
-    margin: 300px;
-    padding: 0;
+    margin-left: 300px; /* Adjusted margin */
 }
 
-
-    /* Add font family */
 .site-nav {
     font-family: "Bebas Neue";
-    margin: 200px;
-    padding: 0;
+    margin: 10px; /* Adjusted margin */
     color: #fff;
-    font-size: 1.25rem;
-  }
+    font-size: 1em; /* Adjusted font size */
+}
   
 .site-nav ul {
     list-style: none;
@@ -54,8 +54,7 @@ p {
   
 .site-nav li {
     display: inline;
-    margin: 0 1em 0 0;
-    color: #fff;
+    margin: 0 1em 0 0.5em; /* Added spacing between nav items */
 }
 
 .site-nav li a {
@@ -76,39 +75,41 @@ p {
     font-weight: bold;
     letter-spacing: 0.3em;
     text-align: center;
-    margin: 1.5em 0 0.5em 0;
+    margin: 1.2em 0 0 0;
 }
 
-    /* Slideshow */
 .specials-slideshow {
-    display:flex;
+    display: flex;
     flex-direction: row;
     position: relative;
     align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
-    height: 100px;
-    margin-left: 250px;
-  }
+    height: 300px; /* Adjusted height */
+    margin: 20px auto; /* Center the slideshow horizontally */
+}
 
 .specials-slideshow .slide {
-    margin: 0 10px
+    margin: 0 10px;
 }
+
 .slide {
     position: relative;
     top: 0;
     left: 0;
-    width: 500px;
-    height: 50px;
+    width: 100%; /* Adjusted width */
+    height: 300px; /* Adjusted height */
 }
 
 .slide img {
-    width: auto;
-    height: 450px;
+    width: 100%; /* Adjusted width */
+    height: 100%; /* Adjusted height */
     border-radius: 20px;
 }
 
-#specials-prev, #specials-next {
+#specials-prev,
+#specials-next {
     position: absolute;
     display: block;
     transform: translateY(-50%);
@@ -119,22 +120,24 @@ p {
     cursor: pointer;
 }
 
-#specials-prev:hover, #specials-next:hover {
+#specials-prev:hover,
+#specials-next:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
-  
-.specials-slideshow:hover #specials-prev, .specials-slideshow:hover #specials-next {
-    display: block; /* show the buttons on hover */
+
+.specials-slideshow:hover #specials-prev,
+.specials-slideshow:hover #specials-next {
+    display: block; /* Show the buttons on hover */
 }
-  
+
 #specials-prev {
     left: 0;
-    top: 17em;
+    top: 11em; /* Adjusted top position */
 }
-  
+
 #specials-next {
-    right: -210px;
-    top: 17em;
+    right: -10px; /* Adjusted right position */
+    top: 11em; /* Adjusted top position */
 }
 
 .menu-header-main {
@@ -143,24 +146,80 @@ p {
     font-weight: bold;
     letter-spacing: 0.3em;
     text-align: center;
-    margin: 15em 0 1em 0;
+    margin: 2em 0 1em 0; /* Adjusted margin */
 }
-  
+
 .food-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-  
+
 .food-menu img {
-    margin: 0.5em;
-    border-radius: 300px;
-    box-shadow: 100px 20px 20px 10px rgba(0,0,0,0.2);
-    height: 500px;
-    margin: 50px;
-    padding-left: 25px;
+    margin: 20px; /* Adjusted margin */
+    border-radius: 200px; /* Adjusted border-radius */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Adjusted width */
+    height: 400px; /* Adjusted height */
+}
+
+.food-menu figure:hover {
+    transform: translateY(-30px);
+  }
+
+figure img {
+    border-radius: 30px; /* Adjusted border-radius */
 }
 
 figcaption {
- text-align: center;
+    text-align: center;
+    font-family: "Bebas Neue";
+}
+
+figcaption a {
+    text-decoration: none;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 60px; /* Adjusted header height for smaller screens */
+    }
+
+    .site-logo {
+        font-size: 1.5em; /* Adjusted font size for smaller screens */
+        margin: 5px; /* Adjusted margin for smaller screens */
+    }
+
+    .site-nav {
+        font-size: 0.8em; /* Adjusted font size for smaller screens */
+        margin: 5px; /* Adjusted margin for smaller screens */
+    }
+
+    .location-find {
+        margin-top: 5px; /* Adjusted margin for smaller screens */
+    }
+
+    .specials-slideshow {
+        margin-left: 5px; /* Adjusted margin for smaller screens */
+        margin-top: 5px;
+    }
+
+    .slide {
+        height: 200px; /* Adjusted height for smaller screens */
+    }
+
+    #specials-prev,
+    #specials-next {
+        top: 10em; /* Adjusted top position for smaller screens */
+    }
+
+    .menu-header-main {
+        margin: 3em 0 1em 0; /* Adjusted margin for smaller screens */
+    }
+
+    .food-menu img {
+        height: 200px; /* Adjusted height for smaller screens */
+        margin: 10px; /* Adjusted margin for smaller screens */
+    }
 }
