@@ -233,4 +233,12 @@ figcaption a {
         height: 200px; /* Adjusted height for smaller screens */
         margin: 10px; /* Adjusted margin for smaller screens */
     }
+
+    .booking-title-container {
+        height: 40px;
+    }
+    
+    .booking-title-container .booking-title {
+        padding-top: 5px;
+    }
 }
